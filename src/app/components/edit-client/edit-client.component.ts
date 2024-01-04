@@ -9,7 +9,7 @@ import { Client } from '../../models/client.model';
   styleUrls: ['./edit-client.component.css']
 })
 export class EditClientComponent implements OnInit {
-  clientId!: number;  // Use the '!' non-null assertion to tell TypeScript that it will be initialized
+  clientId!: number;  
   client!: Client;     // Use the '!' non-null assertion to tell TypeScript that it will be initialized
 
   constructor(
