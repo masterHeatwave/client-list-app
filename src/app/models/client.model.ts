@@ -4,7 +4,7 @@ export interface Client {
   surname: string;
   address: string;
   email: string;
-  phoneNumbers?: PhoneNumber[]; // Assuming PhoneNumber is another model/interface
+  phoneNumbers?: PhoneNumber[]; 
 }
 
 export interface PhoneNumber {

@@ -1,4 +1,3 @@
-// client-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ClientService } from '../../services/client.service';
 import { Client } from '../../models/client.model';
@@ -12,28 +11,34 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 })
 export class ClientListComponent implements OnInit {
   clients: Client[] = [];
-  searchTerm: string = ''; // new property to store the search term
-
-  private searchTerms = new Subject<string>();
+  searchTerm: string = '';
 
   constructor(private clientService: ClientService) { }
 
   ngOnInit(): void {
-    this.searchTerms
-      .pipe(
-        debounceTime(300),
-        distinctUntilChanged(),
-        switchMap((term: string) => this.clientService.searchClients(term))
-      )
-      .subscribe((clients) => {
-        this.clients = clients;
-      });
-
-    // Initial load (you can remove this if not needed)
-    this.search('');
+    // Fetch clients on component initialization
+    this.fetchClients();
   }
 
-  search(term: string): void {
-    this.searchTerms.next(term);
+  fetchClients(): void {
+    this.clientService.getAllClients().subscribe((clients) => {
+      this.clients = clients;
+    });
+  }
+
+  clearSearchPlaceholder(): void {
+    // Clear search placeholder text
+    this.searchTerm = '';
+  }
+
+  editClient(client: Client): void {
+    // Implement edit functionality
+    console.log('Edit client:', client);
+  }
+
+  deleteClient(client: Client): void {
+    // Implement delete functionality
+    console.log('Delete client:', client);
   }
 }
+

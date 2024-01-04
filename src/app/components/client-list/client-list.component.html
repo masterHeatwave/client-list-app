@@ -1,7 +1,29 @@
-<!-- client-list.component.html -->
-<input [(ngModel)]="searchTerm"
-       (input)="search(searchTerm)"
-       placeholder="Search by name, surname or phone number" />
+<div class="container mt-3">
+  <h2>Client List</h2>
+
+  <!-- Search bar -->
+  <div class="form-group">
+    <label for="searchClient">Search for client</label>
+    <input type="text"
+           class="form-control"
+           id="searchClient"
+           placeholder="Search by id, name, surname, or phone number"
+           [(ngModel)]="searchTerm"
+           (focus)="clearSearchPlaceholder()" />
+  </div>
+
+  <!-- Client list -->
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let client of clients">
+      {{ client.name }} {{ client.surname }}
+      <span class="float-right">
+        <button class="btn btn-sm btn-primary" (click)="editClient(client)">Edit</button>
+        <button class="btn btn-sm btn-danger" (click)="deleteClient(client)">Delete</button>
+      </span>
+    </li>
+  </ul>
+</div>
+
 
 
 
