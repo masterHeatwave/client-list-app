@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PD7HjI0QwOzDe1oM4CYbhPP/HgpYkoq5wuxE+RTMxh8=",
+  "Source": "myClientListApp",
+  "BasePath": "_content/myClientListApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
