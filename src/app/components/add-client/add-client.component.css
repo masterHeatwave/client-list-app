@@ -12,8 +12,10 @@ h2 {
 }
 
 label {
+  display: block;
+  margin-bottom: 5px;
   font-weight: bold;
-  color: #007b86; 
+  color: #007b86;
 }
 
 input[type="text"],
@@ -21,8 +23,9 @@ input[type="email"],
 input[type="tel"] {
   width: 100%;
   padding: 8px;
-  margin-top: 5px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .btn-primary {

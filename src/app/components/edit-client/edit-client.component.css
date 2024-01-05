@@ -7,6 +7,12 @@ h2 {
   color: #007b86; 
 }
 
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
 .form-group {
   margin-bottom: 20px;
 }
