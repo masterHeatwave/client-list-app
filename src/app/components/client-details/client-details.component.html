@@ -1,1 +1,35 @@
-<p>client-details works!</p>
+<div class="container mt-3">
+  <h2>Client Details</h2>
+
+  <div *ngIf="client">
+    <div class="form-group">
+      <label>Name:</label>
+      <p>{{ client.name }}</p>
+    </div>
+
+    <div class="form-group">
+      <label>Surname:</label>
+      <p>{{ client.surname }}</p>
+    </div>
+
+    <div class="form-group">
+      <label>Address:</label>
+      <p>{{ client.address }}</p>
+    </div>
+
+    <div class="form-group">
+      <label>Email:</label>
+      <p>{{ client.email }}</p>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Numbers:</label>
+      <ul>
+        <li *ngFor="let phoneNumber of client.phoneNumbers">
+          {{ phoneNumber.type }}: {{ phoneNumber.number }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

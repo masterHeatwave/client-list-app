@@ -10,19 +10,24 @@ import { routes } from './app.routes';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ClientListComponent } from './components/client-list/client-list.component';
+import { AddClientComponent } from './components/add-client/add-client.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    ConfirmationDialogComponent,
-    NavigationComponent,
-    ClientListComponent,
     AppComponent,
+    ClientListComponent,
+    AddClientComponent,
+    NavigationComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CommonModule,
     MatDialogModule,
-    FormsModule, 
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
   ],
   exports: [RouterModule],

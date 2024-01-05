@@ -1,0 +1,39 @@
+/* client-list.component.css */
+
+.container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: auto;
+}
+
+h2 {
+  color: #007b86; /* Turquoise color for the heading */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #007b86; /* Turquoise color for labels */
+}
+
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-primary,
+.btn-danger {
+  margin-left: 10px;
+}
+
+/* Optional: Add some spacing between list items */
+.list-group-item + .list-group-item {
+  margin-top: 10px;
+}

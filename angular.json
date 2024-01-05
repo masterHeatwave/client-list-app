@@ -25,7 +25,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/components/add-client/add-client.component.css",
+              "src/app/components/client-details/client-details.component.css",
+              "src/app/components/client-list/client-list.component.css",
+              "src/app/components/delete-client/delete-client.component.css",
+              "src/app/components/edit-client/edit-client.component.css",
+              "src/app/components/navigation/navigation.component.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
