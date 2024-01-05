@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
     ClientListComponent,
     AddClientComponent,
     NavigationComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
   ],
   imports: [
     BrowserModule,

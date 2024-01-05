@@ -1,12 +1,12 @@
 /* client-list.component.css */
 
 .container {
-  max-width: 800px; /* Adjust the maximum width as needed */
+  max-width: 800px; 
   margin: auto;
 }
 
 h2 {
-  color: #007b86; /* Turquoise color for the heading */
+  color: #007b86; 
 }
 
 .form-group {
@@ -15,7 +15,7 @@ h2 {
 
 label {
   font-weight: bold;
-  color: #007b86; /* Turquoise color for labels */
+  color: #007b86; 
 }
 
 .list-group {
@@ -33,7 +33,6 @@ label {
   margin-left: 10px;
 }
 
-/* Optional: Add some spacing between list items */
 .list-group-item + .list-group-item {
   margin-top: 10px;
 }
